@@ -3,6 +3,10 @@ export default {
         cars.forEach(car => {
             addCar(state, car)
         });
+    },
+    receivedCar(state, car) {
+        console.log(`Mutation-receivedCar->will-set-car ${car.id}`);
+        state.car = car
     }
 }
 

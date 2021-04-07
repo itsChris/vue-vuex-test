@@ -1,6 +1,17 @@
 <template>
   <div class="root">
     <h1>Just a test</h1>
+    <div>
+      <label>currentCar Make:{{ car.Make }}</label>
+    </div>
+    <div>
+      <label>currentCar Model: {{ car.Model }}</label>
+    </div>
+    <div>
+      <input type="text"  
+      v-model="car.Make"
+      />
+    </div>
     <table class="table">
       <thead>
         <tr>
@@ -35,12 +46,14 @@ export default {
 
     const text = ref("");
 
+    const car = computed(() => store.getters.currentCar);
     const cars = computed(() => store.getters.sortedCars);
 
     return {
       list,
       text,
       cars,
+      car,
     };
   },
 };
