@@ -2,7 +2,7 @@
 
 ## Question 
 
-Is there any documentation for the code examples?  
+Vuex - Is there any documentation for the code examples?  
 
 In particular i am interested in how to implement a _two way binding of forms_ with vue 3 and vuex 4 - the examples in the documentation (https://next.vuex.vuejs.org/guide/forms.html#two-way-computed-property) with getters and setters is in my opinion a base but in a real-world application with complex objects this will lead to too much lines of code. (also i'm using nested object properties..)  
 I have read a lot (cloning state into a local object using copy and deepcopy), i know the vuex documentation practically by heart regarding this topic. i have used https://github.com/maoberlehner/vuex-map-fields but would like to avoid dependencies as much as possible. I implemented a BeforeRouteEnter Guard, where i load the state of the component before it's being created but this still does not solve the binding of the form with direct access to the state in the store..  
